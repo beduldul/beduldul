@@ -30,7 +30,6 @@ Nothing below is aspirational. If it is not in a file, it is not here.
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
 ![pandas-ta](https://img.shields.io/badge/pandas--ta-150458?style=flat-square)
 ![joblib](https://img.shields.io/badge/joblib-4B8BBE?style=flat-square)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
 
 **Backend**
 
