@@ -1,80 +1,96 @@
 # Abdul Afif Al Kaysan · `beduldul`
 
-Python systems — ML infrastructure, quantitative analysis, and auditing of measurement code.
+I build the system. Then I try to prove it wrong.
 
-I build systems that collect data and make predictions, then spend most of my time trying to
-falsify the numbers they produce. Most of this work is private; the audits are what I show.
+Most of my work is private. The audits are what I show.
 
-[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/) [![pandas](https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white)](https://pandas.pydata.org/) [![XGBoost](https://img.shields.io/badge/XGBoost-006ACC?style=flat-square&logo=xgboost&logoColor=white)](https://xgboost.readthedocs.io/) [![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)](https://scikit-learn.org/) [![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/) [![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-D71F00?style=flat-square&logo=sqlalchemy&logoColor=white)](https://www.sqlalchemy.org/) [![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)](https://sqlite.org/) [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)](https://www.postgresql.org/) [![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white)](https://pytest.org/) [![Ruff](https://img.shields.io/badge/Ruff-D7FF64?style=flat-square&logo=ruff&logoColor=black)](https://docs.astral.sh/ruff/) [![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)](https://nextjs.org/) [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/) [![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white)](https://playwright.dev/) [![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)](https://www.docker.com/) [![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)](https://kernel.org/)
+A model that cannot be falsified is a decoration.
 
-## Selected work
+Nothing below is aspirational. If it is not in a file, it is not here.
 
-**NEXUS — ML-first crypto trading system** *(private)*
-~17k lines of Python 3.12 across `engine/`, `agents/`, `strategies/`, `collector/`, `api/`.
-XGBoost models are trained on *simulated outcomes under the production exit engine*, not on
-"will price go up". Probabilities are Platt-calibrated (`CalibratedClassifierCV`) and measured
-by AUC, log-loss and Brier score, against a separate walk-forward engine that slides
-alternating train/test windows with no future leakage. ~1,900 model artifacts came out of the
-search. A hardening pass found and fixed 12 bugs where gates could be bypassed, local and
-exchange position state could diverge, or a failed stop-loss left a live position unhedged.
-123 tests passing. `fastapi`, `sqlalchemy`, `alembic`, `pandas`, `ccxt`, `structlog`.
+## Stack
 
-**Signal audit — why a model wasn't learning** *(private)*
-Audited the 12-feature featurizer feeding an FTRL model against 1.18M recorded tick rows. One
-feature (`z8`) consumed **99.63%** of the gradient: a self-referential normaliser whose z-score
-is computed against a sample excluding the point being scored, inflating it to ±7.2e5. Also
-three dead slots (normalisers saturating to 1.0), a duplicated feature, one exactly collinear
-feature (`mom5_20 == ret20 − ret5`, verified over 146,280 rows), and a feature/label horizon
-mismatch — features in event ticks, labels in 2-second wall-clock ticks. Repairing `z8` moved
-AUC 0.5068 → 0.5149: real, and still indistinguishable from noise. Two findings, not conflated.
+**Languages**
 
-**Rejecting a headline edge I couldn't reproduce** *(private)*
-A prior analysis reported a **+0.76c/share** favourite-longshot edge (n=2,122, t=+2.15). I
-found the exact line manufacturing it: a hardcoded `min(0.98, ask)` entry-price cap that
-inflated every zone by +1.23–1.33c. Recomputed honestly, the published figure sat between the
-mid fantasy and the real ask without being either.
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
+![Swift](https://img.shields.io/badge/Swift-F05138?style=flat-square&logo=swift&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 
-**Execution cost and adverse selection** *(private)*
-Streamed 18 days of quote snapshots (1.5M ticks/day) to price out maker entries. The naive
-"market came to you" fill proxy was measuring **book repricing, not executions** — the whole
-book dropping together; genuine fills at a resting bid are ~0.13% of ticks. Real fills show
-adverse selection of −2.31c at 30s (t = −3.46) against a 0.5c median spread saving.
+**ML & Data**
 
-**Reconcile audit — three ledgers, no agreement** *(private)*
-Reconstructed FIFO PnL from 314 raw fills. The fills table, the equity curve and the bot's
-internal ledger are three mutually inconsistent records (realized −4.38 / −3.71 / −12.14).
-Root cause: a 12-hour restore horizon silently dropped older BUY fills, leaving 20 tokens /
-353.7 shares / $174.51 orphaned with no exit path — a warning the log had fired 591 times.
-Fixed, with a regression test. A second candidate bug was investigated and deliberately
-**not** fixed: simulating the exact fill arithmetic showed it discards $0.00.
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
+![XGBoost](https://img.shields.io/badge/XGBoost-006ACC?style=flat-square&logo=xgboost&logoColor=white)
+![pandas](https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
+![pandas-ta](https://img.shields.io/badge/pandas--ta-150458?style=flat-square)
+![joblib](https://img.shields.io/badge/joblib-4B8BBE?style=flat-square)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
 
-**Attendance automation — Playwright at scale** *(private)*
-Playwright contexts driving an SSO/MFA portal for a cohort of ~97 students. Credentials are
-Fernet-sealed with the master key only in the environment, and a preflight check exits
-`EX_CONFIG` *before* any network call so a bad key cannot burn Microsoft login attempts across
-every account. systemd on a VPS provisioned by script (key-only SSH, fail2ban, UFW). The README
-corrects its own earlier memory number: ~82 MB was an empty context, a real page is ~136 MB.
+**Backend**
 
-**ThermoApp — thermodynamic phase-equilibrium app for macOS** *(public)*
-SwiftUI front end over `pycalphad`, for binary phase diagrams and reaction equilibria.
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Uvicorn](https://img.shields.io/badge/Uvicorn-499848?style=flat-square)
+![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white)
+![Pydantic](https://img.shields.io/badge/Pydantic-E92063?style=flat-square&logo=pydantic&logoColor=white)
+![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-D71F00?style=flat-square&logo=sqlalchemy&logoColor=white)
+![Alembic](https://img.shields.io/badge/Alembic-6BA81E?style=flat-square)
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white)
+![Zod](https://img.shields.io/badge/Zod-3E67B1?style=flat-square&logo=zod&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
+![WebSockets](https://img.shields.io/badge/WebSockets-010101?style=flat-square&logo=socketdotio&logoColor=white)
 
-**Android systems tooling** *(public)*
-A set of kernel- and userspace-level utilities: GKI ABI compatibility verification, SELinux
-runtime policy injection, a Magisk/KernelSU module packaging and validation tool, and a
-performance daemon. Mostly Python and POSIX shell against real kernel interfaces.
+**Frontend**
 
-## How I work
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![TanStack Query](https://img.shields.io/badge/TanStack_Query-FF4154?style=flat-square&logo=reactquery&logoColor=white)
+![Recharts](https://img.shields.io/badge/Recharts-22B5BF?style=flat-square)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=flat-square&logo=framer&logoColor=white)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=flat-square&logo=reactrouter&logoColor=white)
+![Axios](https://img.shields.io/badge/Axios-5A29E4?style=flat-square&logo=axios&logoColor=white)
+![SwiftUI](https://img.shields.io/badge/SwiftUI-F05138?style=flat-square&logo=swift&logoColor=white)
 
-Build the system, then try to falsify the numbers it produces. I would rather report "this
-edge is an artifact of a hardcoded price cap" than keep a flattering result, and I keep
-"the bug explains the failure to learn" separate from "the bug was hiding a signal", because
-those are different claims. Off-by-one bugs in a featurizer and a wrong constant in a README
-get the same treatment.
+**Infra & Tooling**
 
-Work is reproducible: audit findings live in committed markdown next to the exact command that
-regenerates them, and scope limits (partial date ranges, sample sizes) are stated rather than
-omitted. Typical stack: typed Python 3.12 with `ruff` and `pytest`, async FastAPI + SQLAlchemy
-over SQLite/Postgres with Alembic, XGBoost/scikit-learn for modelling.
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+![systemd](https://img.shields.io/badge/systemd-000000?style=flat-square&logo=systemd&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+![macOS](https://img.shields.io/badge/macOS-000000?style=flat-square&logo=apple&logoColor=white)
+![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white)
+![Ruff](https://img.shields.io/badge/Ruff-D7FF64?style=flat-square&logo=ruff&logoColor=black)
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
+![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white)
+
+## Work
+
+**NEXUS** — ML-first crypto trading system. 17k lines, 12 bugs found, 123 tests. Private.
+
+**Signal audit** — one feature ate 99.63% of the gradient. Fixed it; AUC moved to 0.5149. Still noise. Reported as two findings.
+
+**Rejecting an edge** — a hardcoded `min(0.98, ask)` cap manufactured a +0.76c/share result. Recalculated honestly, it wasn't there.
+
+**Attendance automation** — Playwright over SSO/MFA for ~97 accounts. Key-sealed credentials, preflight exit before any network call.
+
+**ThermoApp** ([public](https://github.com/beduldul/ThermoApp)) — SwiftUI over `pycalphad` for phase diagrams.
+
+**hyperspeed-engine** ([public](https://github.com/beduldul/hyperspeed-engine)) — Java/NeoForge. Plus Android GKI, SELinux and kernel tooling.
+
+## Note
+
+I will report the negative result. Off-by-one bugs and wrong constants get the same treatment.
 
 ## Contact
 
