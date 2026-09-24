@@ -21,6 +21,8 @@ Nothing below is aspirational. If it is not in a file, it is not here.
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![Solidity](https://img.shields.io/badge/Solidity-363636?style=flat-square&logo=solidity&logoColor=white)
+![Shell](https://img.shields.io/badge/Shell-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
 
 **ML & Data**
 
@@ -30,6 +32,8 @@ Nothing below is aspirational. If it is not in a file, it is not here.
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
 ![pandas-ta](https://img.shields.io/badge/pandas--ta-150458?style=flat-square)
 ![joblib](https://img.shields.io/badge/joblib-4B8BBE?style=flat-square)
+![Beautiful Soup](https://img.shields.io/badge/Beautiful_Soup-3776AB?style=flat-square)
+![Rich](https://img.shields.io/badge/Rich-FAE742?style=flat-square&logo=rich&logoColor=black)
 
 **Backend**
 
@@ -45,6 +49,7 @@ Nothing below is aspirational. If it is not in a file, it is not here.
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
 ![WebSockets](https://img.shields.io/badge/WebSockets-010101?style=flat-square&logo=socketdotio&logoColor=white)
+![viem](https://img.shields.io/badge/viem-1E1E1E?style=flat-square)
 
 **Frontend**
 
