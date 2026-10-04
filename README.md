@@ -1,101 +1,56 @@
-# Abdul Afif Al Kaysan · `beduldul`
+# Abdul Afif Al Kaysan
 
-I build the system. Then I try to prove it wrong.
+I'm Abdul Afif Al Kaysan, a builder in Bandung, Indonesia. I build quant
+research systems, web3 security tooling, and Android/kernel tooling — and I
+publish the negative results, not just the wins.
 
-Most of my work is private. The audits are what I show.
+Every claim below is checkable in the linked repository.
 
-A model that cannot be falsified is a decoration.
+## Selected work
 
-Nothing below is aspirational. If it is not in a file, it is not here.
+**[arbitrage-research](https://github.com/beduldul/arbitrage-research)** — Measured
+arbitrage research across 10+ classes on real public order books, at a $100
+retail basis.
+→ The verdict is negative: no class is net-positive, because the retail
+fee/spread floor — not the absence of signal — defeats every one. The
+methodology documents three of the project's own measurement artifacts caught
+before they became claims.
 
-## Stack
+**[honest-backtest](https://github.com/beduldul/honest-backtest)** — Statistical
+guards that refuse to certify a backtest you have fooled yourself with.
+→ 301 tests pass in CI, each guard written from a specific false positive it
+caught in the author's own research.
 
-**Languages**
+**[rfc5322](https://github.com/beduldul/rfc5322)** — An RFC 5322-conformant email
+address parser (full obsolete §4.4 grammar), zero runtime dependencies.
+→ 263 tests, 98% coverage, CI green on Python 3.12 and 3.13.
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
-![Swift](https://img.shields.io/badge/Swift-F05138?style=flat-square&logo=swift&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
-![Solidity](https://img.shields.io/badge/Solidity-363636?style=flat-square&logo=solidity&logoColor=white)
-![Shell](https://img.shields.io/badge/Shell-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
+**[chainguard-web3-security](https://github.com/beduldul/chainguard-web3-security)** —
+Next.js web3 security dashboard that simulates and risk-scores EVM and Solana
+transactions before signing, with a companion set of onchain contracts.
+→ 8 Solidity contracts under Foundry; 91 tests passing, CI green.
 
-**ML & Data**
+**[dns-shield](https://github.com/beduldul/dns-shield)** — Diagnoses ISP DNS
+poisoning and works around it with DNS-over-HTTPS resolution and
+SNI-preserving connections.
+→ 289 tests passing; stdlib only, no runtime dependencies.
 
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
-![XGBoost](https://img.shields.io/badge/XGBoost-006ACC?style=flat-square&logo=xgboost&logoColor=white)
-![pandas](https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
-![pandas-ta](https://img.shields.io/badge/pandas--ta-150458?style=flat-square)
-![joblib](https://img.shields.io/badge/joblib-4B8BBE?style=flat-square)
-![Beautiful Soup](https://img.shields.io/badge/Beautiful_Soup-3776AB?style=flat-square)
-![Rich](https://img.shields.io/badge/Rich-FAE742?style=flat-square&logo=rich&logoColor=black)
+**[gki-abi-checker](https://github.com/beduldul/gki-abi-checker)** — Android GKI
+ABI compatibility checker for kernel `.config` files and source definitions.
+→ Validates memory-layout flags (e.g. `CONFIG_SLUB_DEBUG`) whose change would
+shift `struct page` and bootloop a GKI device. MIT.
 
-**Backend**
+## What I'm looking for
 
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![Uvicorn](https://img.shields.io/badge/Uvicorn-499848?style=flat-square)
-![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white)
-![Pydantic](https://img.shields.io/badge/Pydantic-E92063?style=flat-square&logo=pydantic&logoColor=white)
-![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-D71F00?style=flat-square&logo=sqlalchemy&logoColor=white)
-![Alembic](https://img.shields.io/badge/Alembic-6BA81E?style=flat-square)
-![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white)
-![Zod](https://img.shields.io/badge/Zod-3E67B1?style=flat-square&logo=zod&logoColor=white)
-![JWT](https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
-![WebSockets](https://img.shields.io/badge/WebSockets-010101?style=flat-square&logo=socketdotio&logoColor=white)
-![viem](https://img.shields.io/badge/viem-1E1E1E?style=flat-square)
+Open to work, contract, and research collaboration in quant research, web3
+security, and Android/kernel tooling.
 
-**Frontend**
+## Tooling
 
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
-![TanStack Query](https://img.shields.io/badge/TanStack_Query-FF4154?style=flat-square&logo=reactquery&logoColor=white)
-![Recharts](https://img.shields.io/badge/Recharts-22B5BF?style=flat-square)
-![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=flat-square&logo=framer&logoColor=white)
-![React Router](https://img.shields.io/badge/React_Router-CA4245?style=flat-square&logo=reactrouter&logoColor=white)
-![Axios](https://img.shields.io/badge/Axios-5A29E4?style=flat-square&logo=axios&logoColor=white)
-![SwiftUI](https://img.shields.io/badge/SwiftUI-F05138?style=flat-square&logo=swift&logoColor=white)
-
-**Infra & Tooling**
-
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
-![systemd](https://img.shields.io/badge/systemd-000000?style=flat-square&logo=systemd&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
-![macOS](https://img.shields.io/badge/macOS-000000?style=flat-square&logo=apple&logoColor=white)
-![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white)
-![Ruff](https://img.shields.io/badge/Ruff-D7FF64?style=flat-square&logo=ruff&logoColor=black)
-![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
-![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white)
-
-## Work
-
-**NEXUS** — ML-first crypto trading system. 17k lines, 12 bugs found, 123 tests. Private.
-
-**Signal audit** — one feature ate 99.63% of the gradient. Fixed it; AUC moved to 0.5149. Still noise. Reported as two findings.
-
-**Rejecting an edge** — a hardcoded `min(0.98, ask)` cap manufactured a +0.76c/share result. Recalculated honestly, it wasn't there.
-
-**Attendance automation** — Playwright over SSO/MFA for ~97 accounts. Key-sealed credentials, preflight exit before any network call.
-
-**ThermoApp** ([public](https://github.com/beduldul/ThermoApp)) — SwiftUI over `pycalphad` for phase diagrams.
-
-**hyperspeed-engine** ([public](https://github.com/beduldul/hyperspeed-engine)) — Java/NeoForge. Plus Android GKI, SELinux and kernel tooling.
-
-## Note
-
-I will report the negative result. Off-by-one bugs and wrong constants get the same treatment.
+Python · TypeScript / JavaScript · Solidity · Shell · Java · C — with pytest,
+Foundry, Node.js, GitHub Actions, and Linux/Android kernel tooling.
 
 ## Contact
 
-[alkaysan07@gmail.com](mailto:alkaysan07@gmail.com)
+- Email: alkaysan07@gmail.com
+- GitHub: [@beduldul](https://github.com/beduldul)
