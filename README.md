@@ -125,7 +125,6 @@ security, and Android/kernel tooling.
 ![Pydantic](https://img.shields.io/badge/Pydantic-E92063?style=flat-square&logo=pydantic&logoColor=white)
 ![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white)
 ![pikepdf](https://img.shields.io/badge/pikepdf-8F1D1D?style=flat-square)
-
 ![ccxt](https://img.shields.io/badge/ccxt-1E1E1E?style=flat-square&logo=bitcoin&logoColor=white)
 
 ## Web3
