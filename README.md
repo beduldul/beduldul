@@ -136,19 +136,6 @@ security, and Android/kernel tooling.
 ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
 ![uv](https://img.shields.io/badge/uv-DE5FE9?style=flat-square&logo=uv&logoColor=white)
 
-Every badge above is backed by real usage: ML & data — aloy-alloy-design
-(Torch + BoTorch Bayesian alloy optimization, pycalphad, pymoo, matplotlib,
-joblib, scikit-learn), back/nexus and polymarket (numpy, pandas, scipy,
-XGBoost, scikit-learn); Web & frontend — chainguard-web3-security (Next.js,
-React, Tailwind, recharts), pancasila (React + Vite + Tailwind, Express,
-Prisma, Node.js), back/nexus (Next.js); Python ecosystem — back/nexus
-(FastAPI, SQLAlchemy, Pydantic), attendance-bot (Playwright), pdfua
-(pikepdf); Web3 — chainguard-web3-security (Foundry: `forge build/test` in
-CI), vaultguard (Anchor + Solana); Tooling & infra — pytest/ruff/mypy across
-the PyPI packages, GitHub Actions in 14 workflow files, Docker +
-docker-compose in pancasila, SQLite in back/nexus and polymarket, uv
-lockfiles in honest-backtest, back and bansos-ai-hunter.
-
 ## Contact
 
 - Email: alkaysan07@gmail.com
