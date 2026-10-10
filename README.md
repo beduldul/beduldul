@@ -1,8 +1,15 @@
 # Abdul Afif Al Kaysan
 
 I'm Abdul Afif Al Kaysan, a builder in Bandung, Indonesia. I build quant
-research systems, web3 security tooling, and Android/kernel tooling — and I
-publish the negative results, not just the wins.
+research systems, web3 security tooling, metallurgy/CALPHAD tooling, and
+Android/kernel tooling — and I publish the negative results, not just the wins.
+
+## Education
+
+**Institut Teknologi Bandung (ITB)** — undergraduate (S1) in Metallurgical
+Engineering (Teknik Metalurgi), Fakultas Teknologi Pertambangan dan Perminyakan
+(FTTM). Current work includes CALPHAD database tooling and ML-assisted alloy
+design.
 
 Every claim below is checkable in the linked repository.
 
@@ -26,15 +33,15 @@ Four of these are packaged and installable, published under the PyPI account
   email address parser with the full obsolete §4.4 grammar; dependency-free
   (Python 3.12+).
   `pip install rfc5322`
-- **[pdfua](https://pypi.org/project/pdfua/)** `0.1.2` — Checks the
+- **[pdfua](https://pypi.org/project/pdfua/)** `0.1.3` — Checks the
   machine-checkable subset of PDF/UA-1 and WCAG 2.1 in PDFs, built on pikepdf
   with no JVM (Python 3.10+).
   `pip install pdfua`
-- **[dns-shield](https://pypi.org/project/dns-shield/)** `0.1.2` — Detects ISP
+- **[dns-shield](https://pypi.org/project/dns-shield/)** `0.1.3` — Detects ISP
   DNS poisoning and works around it with DNS-over-HTTPS and SNI-preserving
   connections (Python 3.10+).
   `pip install dns-shield`
-- **[calphad-io](https://pypi.org/project/calphad-io/)** `0.1.2` — Reads, writes
+- **[calphad-io](https://pypi.org/project/calphad-io/)** `0.1.3` — Reads, writes
   and validates CALPHAD thermodynamic databases (Thermo-Calc `.TDB`,
   ChemSage/FactSage `.DAT`) (Python 3.10+).
   `pip install calphad-io`
@@ -58,6 +65,13 @@ author's own research; 301 tests pass locally, CI green.
 package above: an RFC 5322-conformant email address parser (full obsolete §4.4
 grammar), zero runtime dependencies.
 → 288 tests, 99% coverage, CI green.
+
+**[solguard](https://github.com/beduldul/solguard)** — Rust static analyser
+for Solana/Anchor programs, flags common Anchor security pitfalls before
+deployment. CI green.
+
+**[vaultguard](https://github.com/beduldul/vaultguard)** — Anchor Solana
+program with 13 tests passing on localnet, CI green.
 
 **[chainguard-web3-security](https://github.com/beduldul/chainguard-web3-security)** —
 Next.js web3 security dashboard that simulates and risk-scores EVM and Solana
