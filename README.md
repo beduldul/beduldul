@@ -19,10 +19,12 @@ Every claim below is checkable in the linked repository.
 
 Every badge is backed by code: Python — rfc5322, pdfua, dns-shield,
 calphad-io, honest-backtest, arbitrage-research, attendance-bot, ThermoApp,
-aloy-alloy-design; Rust — solguard, vaultguard; TypeScript/JavaScript —
-chainguard-web3-security dashboard; Solidity — chainguard contracts and the
-vaultguard Anchor programs; Swift — ThermoApp macOS app; Java —
-hyperspeed-engine; Bash — the Android GKI tuning and build tooling.
+aloy-alloy-design; Rust — solguard and the vaultguard Anchor programs (Solana
+programs are Rust, not Solidity); TypeScript — chainguard-web3-security
+dashboard; Solidity — the chainguard-web3-security EVM contracts only;
+JavaScript — chainguard plus vite-hmr-doctor and pancasila; Swift — the
+ThermoApp macOS app; Java — hyperspeed-engine; Bash — the Android GKI tuning
+and build tooling scripts.
 
 ## Published on PyPI
 
