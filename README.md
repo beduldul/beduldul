@@ -4,14 +4,6 @@ I'm Abdul Afif Al Kaysan, a student and developer in Bandung, Indonesia. I
 work on quant research tools, web3 security tooling, metallurgy/CALPHAD
 tooling, and Android/kernel tooling.
 
-## Education
-
-**Institut Teknologi Bandung (ITB)** — undergraduate (S1) in Metallurgical
-Engineering (Teknik Metalurgi), Fakultas Teknologi Pertambangan dan Perminyakan
-(FTTM).
-
-Every claim below is checkable in the linked repositories.
-
 ## Languages
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
