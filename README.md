@@ -1,17 +1,16 @@
 # Abdul Afif Al Kaysan
 
-I'm Abdul Afif Al Kaysan, a builder in Bandung, Indonesia. I build quant
-research systems, web3 security tooling, metallurgy/CALPHAD tooling, and
-Android/kernel tooling — and I publish the negative results, not just the wins.
+I'm Abdul Afif Al Kaysan, a student and developer in Bandung, Indonesia. I
+work on quant research tools, web3 security tooling, metallurgy/CALPHAD
+tooling, and Android/kernel tooling.
 
 ## Education
 
 **Institut Teknologi Bandung (ITB)** — undergraduate (S1) in Metallurgical
 Engineering (Teknik Metalurgi), Fakultas Teknologi Pertambangan dan Perminyakan
-(FTTM). Current work includes CALPHAD database tooling and ML-assisted alloy
-design.
+(FTTM).
 
-Every claim below is checkable in the linked repository.
+Every claim below is checkable in the linked repositories.
 
 ## Languages
 
@@ -48,18 +47,17 @@ Four of these are packaged and installable, published under the PyPI account
 
 ## Selected work
 
-**[arbitrage-research](https://github.com/beduldul/arbitrage-research)** — Measured
-arbitrage research across 10+ classes on real public order books, at a $100
+**[arbitrage-research](https://github.com/beduldul/arbitrage-research)** —
+Arbitrage research across 10+ classes on real public order books, at a $100
 retail basis.
-→ The verdict is negative: no class is net-positive, because the retail
-fee/spread floor — not the absence of signal — defeats every one. The
-methodology documents three of the project's own measurement artifacts caught
-before they became claims.
+→ Result: negative. No class is net-positive — the retail fee/spread floor
+defeats every one. The methodology documents three of the project's own
+measurement artifacts caught before they became claims.
 
 **[honest-backtest](https://github.com/beduldul/honest-backtest)** — Statistical
 guards that refuse to certify a backtest you have fooled yourself with.
-→ Each guard was written from a specific false positive it caught in the
-author's own research; 301 tests pass locally, CI green.
+→ Each guard was written from a specific false positive it caught in my own
+backtests; 301 tests pass locally, CI green.
 
 **[rfc5322](https://github.com/beduldul/rfc5322)** — The parser behind the PyPI
 package above: an RFC 5322-conformant email address parser (full obsolete §4.4
@@ -67,8 +65,8 @@ grammar), zero runtime dependencies.
 → 288 tests, 99% coverage, CI green.
 
 **[solguard](https://github.com/beduldul/solguard)** — Rust static analyser
-for Solana/Anchor programs, flags common Anchor security pitfalls before
-deployment. CI green.
+for Solana/Anchor programs; flags common Anchor pitfalls (one check is known
+noisy). CI green.
 
 **[vaultguard](https://github.com/beduldul/vaultguard)** — Anchor Solana
 program with 13 tests passing on localnet, CI green.
