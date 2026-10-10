@@ -6,6 +6,24 @@ publish the negative results, not just the wins.
 
 Every claim below is checkable in the linked repository.
 
+## Languages
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Rust](https://img.shields.io/badge/Rust-DEA584?style=flat-square&logo=rust&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Solidity](https://img.shields.io/badge/Solidity-363636?style=flat-square&logo=solidity&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![Swift](https://img.shields.io/badge/Swift-F05138?style=flat-square&logo=swift&logoColor=white)
+![Java](https://img.shields.io/badge/Java-007396?style=flat-square&logo=openjdk&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white)
+
+Every badge is backed by code: Python — rfc5322, pdfua, dns-shield,
+calphad-io, honest-backtest, arbitrage-research, attendance-bot, ThermoApp,
+aloy-alloy-design; Rust — solguard, vaultguard; TypeScript/JavaScript —
+chainguard-web3-security dashboard; Solidity — chainguard contracts and the
+vaultguard Anchor programs; Swift — ThermoApp macOS app; Java —
+hyperspeed-engine; Bash — the Android GKI tuning and build tooling.
+
 ## Published on PyPI
 
 Four of these are packaged and installable, published under the PyPI account
@@ -70,8 +88,10 @@ security, and Android/kernel tooling.
 
 ## Tooling
 
-Python · TypeScript / JavaScript · Solidity · Shell · Java · C — with pytest,
-Foundry, Node.js, GitHub Actions, and Linux/Android kernel tooling.
+pytest · Foundry · Anchor · Node.js · GitHub Actions · SQLite · Docker —
+across the Python research stack, the Rust/Solidity security tooling, and
+Linux/Android kernel work (shell scripts, kernel `.config` tooling, Magisk
+module builds).
 
 ## Contact
 
