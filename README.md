@@ -17,15 +17,6 @@ Every claim below is checkable in the linked repository.
 ![Java](https://img.shields.io/badge/Java-007396?style=flat-square&logo=openjdk&logoColor=white)
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white)
 
-Every badge is backed by code: Python — rfc5322, pdfua, dns-shield,
-calphad-io, honest-backtest, arbitrage-research, attendance-bot, ThermoApp,
-aloy-alloy-design; Rust — solguard and the vaultguard Anchor programs (Solana
-programs are Rust, not Solidity); TypeScript — chainguard-web3-security
-dashboard; Solidity — the chainguard-web3-security EVM contracts only;
-JavaScript — chainguard plus vite-hmr-doctor and pancasila; Swift — the
-ThermoApp macOS app; Java — hyperspeed-engine; Bash — the Android GKI tuning
-and build tooling scripts.
-
 ## Published on PyPI
 
 Four of these are packaged and installable, published under the PyPI account
@@ -110,12 +101,13 @@ security, and Android/kernel tooling.
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
 ![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white)
-![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white)
+![framer-motion](https://img.shields.io/badge/framer--motion-0055FF?style=flat-square&logo=framer&logoColor=white)
+![lucide-react](https://img.shields.io/badge/lucide--react-F56565?style=flat-square&logo=lucide&logoColor=white)
+![Recharts](https://img.shields.io/badge/Recharts-22C55E?style=flat-square&logo=recharts&logoColor=white)
 
 ## Python ecosystem
 
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-D71F00?style=flat-square&logo=sqlalchemy&logoColor=white)
 ![Pydantic](https://img.shields.io/badge/Pydantic-E92063?style=flat-square&logo=pydantic&logoColor=white)
 ![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white)
 ![pikepdf](https://img.shields.io/badge/pikepdf-8F1D1D?style=flat-square)
@@ -133,8 +125,17 @@ security, and Android/kernel tooling.
 ![mypy](https://img.shields.io/badge/mypy-2A6DB2?style=flat-square&logo=mypy&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![nginx](https://img.shields.io/badge/nginx-009639?style=flat-square&logo=nginx&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
 ![uv](https://img.shields.io/badge/uv-DE5FE9?style=flat-square&logo=uv&logoColor=white)
+![ccxt](https://img.shields.io/badge/ccxt-1E1E1E?style=flat-square&logo=bitcoin&logoColor=white)
+
+## Data & storage
+
+![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-D71F00?style=flat-square&logo=sqlalchemy&logoColor=white)
+![Alembic](https://img.shields.io/badge/Alembic-2F2F2F?style=flat-square&logo=alembic&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white)
 
 ## Contact
 
