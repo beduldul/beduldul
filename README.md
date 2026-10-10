@@ -112,6 +112,8 @@ security, and Android/kernel tooling.
 ![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white)
 ![pikepdf](https://img.shields.io/badge/pikepdf-8F1D1D?style=flat-square)
 
+![ccxt](https://img.shields.io/badge/ccxt-1E1E1E?style=flat-square&logo=bitcoin&logoColor=white)
+
 ## Web3
 
 ![Foundry](https://img.shields.io/badge/Foundry-1E1E1E?style=flat-square&logo=ethereum&logoColor=white)
@@ -128,7 +130,6 @@ security, and Android/kernel tooling.
 ![nginx](https://img.shields.io/badge/nginx-009639?style=flat-square&logo=nginx&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
 ![uv](https://img.shields.io/badge/uv-DE5FE9?style=flat-square&logo=uv&logoColor=white)
-![ccxt](https://img.shields.io/badge/ccxt-1E1E1E?style=flat-square&logo=bitcoin&logoColor=white)
 
 ## Data & storage
 
