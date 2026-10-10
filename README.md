@@ -88,12 +88,66 @@ shift `struct page` and bootloop a GKI device. MIT.
 Open to work, contract, and research collaboration in quant research, web3
 security, and Android/kernel tooling.
 
-## Tooling
+## Machine learning & data
 
-pytest · Foundry · Anchor · Node.js · GitHub Actions · SQLite · Docker —
-across the Python research stack, the Rust/Solidity security tooling, and
-Linux/Android kernel work (shell scripts, kernel `.config` tooling, Magisk
-module builds).
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
+![pandas](https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?style=flat-square&logo=scipy&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
+![XGBoost](https://img.shields.io/badge/XGBoost-AA0000?style=flat-square&logo=xgboost&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+![BoTorch](https://img.shields.io/badge/BoTorch-EE4C2C?style=flat-square&logo=botorch&logoColor=white)
+![pycalphad](https://img.shields.io/badge/pycalphad-2B5B84?style=flat-square)
+![pymoo](https://img.shields.io/badge/pymoo-F9A825?style=flat-square)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat-square&logo=matplotlib&logoColor=white)
+![joblib](https://img.shields.io/badge/joblib-1E4252?style=flat-square)
+
+## Web & frontend
+
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white)
+
+## Python ecosystem
+
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-D71F00?style=flat-square&logo=sqlalchemy&logoColor=white)
+![Pydantic](https://img.shields.io/badge/Pydantic-E92063?style=flat-square&logo=pydantic&logoColor=white)
+![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white)
+![pikepdf](https://img.shields.io/badge/pikepdf-8F1D1D?style=flat-square)
+
+## Web3
+
+![Foundry](https://img.shields.io/badge/Foundry-1E1E1E?style=flat-square&logo=ethereum&logoColor=white)
+![Anchor](https://img.shields.io/badge/Anchor-9945FF?style=flat-square&logo=solana&logoColor=white)
+![Solana](https://img.shields.io/badge/Solana-9945FF?style=flat-square&logo=solana&logoColor=white)
+
+## Tooling & infra
+
+![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white)
+![ruff](https://img.shields.io/badge/ruff-261230?style=flat-square&logo=ruff&logoColor=white)
+![mypy](https://img.shields.io/badge/mypy-2A6DB2?style=flat-square&logo=mypy&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
+![uv](https://img.shields.io/badge/uv-DE5FE9?style=flat-square&logo=uv&logoColor=white)
+
+Every badge above is backed by real usage: ML & data — aloy-alloy-design
+(Torch + BoTorch Bayesian alloy optimization, pycalphad, pymoo, matplotlib,
+joblib, scikit-learn), back/nexus and polymarket (numpy, pandas, scipy,
+XGBoost, scikit-learn); Web & frontend — chainguard-web3-security (Next.js,
+React, Tailwind, recharts), pancasila (React + Vite + Tailwind, Express,
+Prisma, Node.js), back/nexus (Next.js); Python ecosystem — back/nexus
+(FastAPI, SQLAlchemy, Pydantic), attendance-bot (Playwright), pdfua
+(pikepdf); Web3 — chainguard-web3-security (Foundry: `forge build/test` in
+CI), vaultguard (Anchor + Solana); Tooling & infra — pytest/ruff/mypy across
+the PyPI packages, GitHub Actions in 14 workflow files, Docker +
+docker-compose in pancasila, SQLite in back/nexus and polymarket, uv
+lockfiles in honest-backtest, back and bansos-ai-hunter.
 
 ## Contact
 
